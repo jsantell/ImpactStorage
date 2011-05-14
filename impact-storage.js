@@ -73,10 +73,9 @@ ImpactStorage = ig.Class.extend({
 
     
     getBool: function(key)  {
-
-        if(localStorage.getItem(key)=='true')
+        if(localStorage.getItem(key)=='true' || localStorage.getItem(key)=='1')
             return true;
-        else if(localStorage.getItem(key)=='false')
+        else if(localStorage.getItem(key)=='false' || localStorage.getItem(key)=='0')
             return false;
         else
             return null;
