@@ -2,11 +2,13 @@ ImpactStorage - Local Storage plugin for ImpactJS
 =================================================
 
 h2. About
-ImpactStorage is a plugin for HTML5/js game framework "ImpactJS":http://www.impactjs.com/ to give developers quick access to localStorage for their projects. Mostly an interface for localStorage, ImpactStorage is set up to bake with your ImpactJS project, take care of some error handling, as well as support object types in addition to strings.
 
-Created by "Jordan Santell":http://www.jsantell.com/ for "Duck It!":http://www.spacewhalestudios.com/duckit/; enjoy!
+ImpactStorage is a plugin for HTML5/js game framework [ImpactJS](http://www.impactjs.com) to give developers quick access to localStorage for their projects. Mostly an interface for localStorage, ImpactStorage is set up to bake with your ImpactJS project, take care of some error handling, as well as support object types in addition to strings.
+
+Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.spacewhalestudios.com/duckit/); enjoy!
 
 h2. Installation
+
 * Move impact-storage.js to your ImpactJS project's plugin folder: ``[PROJECT]/lib/plugins/impact-storage.js``
 * Add the plugin to your main.js file
 <pre>
@@ -27,6 +29,7 @@ h2. Installation
 
 
 h2. Methods
+
 ``isCapable()``: Returns ``true`` if the browser is capable of using localStorage. ``false`` otherwise.
 ``isSet(key)``: Returns ``true`` if ``key`` has been set in localStorage. ``false`` otherwise.
 ``initUnset(key, value)``: *Iff* ``key`` has not been set, set ``key`` to ``value``
@@ -42,7 +45,9 @@ h2. Methods
 
 
 h2. Examples
+
 h3. High Score
+
 <pre>
     this.storage = new ImpactStorage();
 
@@ -58,6 +63,7 @@ During the update loop that determines whether or not the current score should o
 </pre>
 
 h3. Storing JSON Objects
+
 localStorage stores all data as strings, but the ImpactStorage ``.set(key, value)`` and ``.get(key)`` methods convert objects to and from strings  in order to be saved to localStorage.
 <pre>
 
