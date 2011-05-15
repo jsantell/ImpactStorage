@@ -57,8 +57,10 @@ Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.s
 During the update loop that determines whether or not the current score should override the score in localStorage:
 <pre>
     var player = this.getEntitiesByType(EntityPlayer)[0];
-    // Updates the value of 'highScore' if and only
-    // if player.score > this.storage.get('highScore')
+    /*
+       Updates the value of 'highScore' if and only
+       if player.score > this.storage.get('highScore')
+    */
     this.storage.setHighest('highScore',player.score); 
 </pre>
 
@@ -68,10 +70,11 @@ localStorage stores all data as strings, but the ImpactStorage ``.set(key, value
 <pre>
 
     this.storage = new ImpactStorage();
-
-    // Player's velocity is an object stored as
-    // vel: {x: 200, y: 100}
-    // And that data is now being stored with key playerVel in localStorage
+    /*
+       Player's velocity is an object stored as
+       vel: {x: 200, y: 100}
+       And that data is now being stored with key playerVel in localStorage
+    */
     var player = this.getEntitiesByType(EntityPlayer)[0];
     this.storage.set('playerVel',player.vel)
 
