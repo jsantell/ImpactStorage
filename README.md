@@ -3,7 +3,7 @@ ImpactStorage - Local Storage plugin for ImpactJS
 
 # About
 
-ImpactStorage is a plugin for HTML5/js game framework [ImpactJS](http://www.impactjs.com) to give developers quick access to localStorage for their projects. Mostly an interface for localStorage, ImpactStorage is set up to bake with your ImpactJS project, take care of some error handling, as well as support object types in addition to strings.
+ImpactStorage is a plugin for HTML5/js game framework [ImpactJS](http://www.impactjs.com), giving developers an easy-to-use interface to localStorage for their projects. Mostly a facade for localStorage, ImpactStorage is set up to bake with your ImpactJS project, take care of some error handling, some convenience methods, as well as support objects in addition to strings.
 
 Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.spacewhalestudios.com/duckit/); enjoy!
 
@@ -51,7 +51,7 @@ Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.s
 <pre>
     this.storage = new ImpactStorage();
 
-    // Initialize high score as 0 if no high score exists
+    // Initialize high score as 0 if 'highScore' does not exist
     this.storage.initUnset('highScore', 0);
 </pre>
 During the update loop that determines whether or not the current score should override the score in localStorage:

@@ -1,3 +1,13 @@
+/**
+ *  @impact-storage.js
+ *  @author: Jordan Santell  
+ *  @date: May, 2011
+ *  @copyright (c) 2011 Jordan Santell, under The MIT License (see LICENSE)
+ *
+ *  ImpactStorage is a plugin for HTML5/js game framework ImpactJS, giving
+ *  developers an easy-to-use interface to localStorage for their projects.
+ */
+
 ig.module(
 	'plugins.impact-storage'
 )
