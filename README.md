@@ -5,7 +5,7 @@ ImpactStorage - Local Storage plugin for ImpactJS
 
 ImpactStorage is a plugin for HTML5/js game framework [ImpactJS](http://www.impactjs.com), giving developers an easy-to-use interface to localStorage for their projects. Mostly a facade for localStorage, ImpactStorage is set up to bake with your ImpactJS project, take care of some error handling, some convenience methods, as well as support objects in addition to strings.
 
-Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.spacewhalestudios.com/duckit/); enjoy!
+Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.spacewhalestudios.com/duckit/) (full release coming soon); enjoy!
 
 # Installation
 
@@ -24,7 +24,7 @@ Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.s
 </pre>
 * Create a local storage object and check out the examples and methods below
 <pre> 
-    storage: new ImpactStorage(),
+    storage: new ig.Storage(),
 </pre>
 
 
@@ -49,7 +49,7 @@ Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.s
 ## High Score
 
 <pre>
-    this.storage = new ImpactStorage();
+    this.storage = new ig.Storage();
 
     // Initialize high score as 0 if 'highScore' does not exist
     this.storage.initUnset('highScore', 0);
@@ -69,7 +69,7 @@ During the update loop that determines whether or not the current score should o
 localStorage stores all data as strings, but the ImpactStorage ``.set(key, value)`` and ``.get(key)`` methods convert objects to and from strings  in order to be saved to localStorage.
 <pre>
 
-    this.storage = new ImpactStorage();
+    this.storage = new ig.Storage();
     /*
        Player's velocity is an object stored as
        vel: {x: 200, y: 100}

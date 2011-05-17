@@ -16,15 +16,15 @@ ig.module(
 )
 .defines(function(){
 
-ImpactStorage = ig.Class.extend({
+ig.Storage = ig.Class.extend({
 
     // Makes ImpactStorage a singleton
     staticInstantiate: function(i)  {
 
-        if(ImpactStorage.instance==null)
+        if(ig.Storage.instance==null)
             return null;
         else
-            return ImpactStorage.instance;
+            return ig.Storage.instance;
     },
 
 	
