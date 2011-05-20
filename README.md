@@ -1,7 +1,4 @@
-ImpactStorage - Local Storage plugin for ImpactJS
-=================================================
-
-# About
+# ImpactStorage - Local Storage plugin for ImpactJS #
 
 ImpactStorage is a plugin for HTML5/js game framework [ImpactJS](http://www.impactjs.com), giving developers an easy-to-use interface to localStorage for their projects. Mostly a facade for localStorage, ImpactStorage is set up to bake with your ImpactJS project, take care of some error handling, some convenience methods, as well as support objects in addition to strings.
 
