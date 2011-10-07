@@ -32,7 +32,7 @@ ig.Storage = ig.Class.extend({
     },
     
     isSet: function(key)   {
-        return !this.get(key) === null
+        return !(this.get(key) === null);
     },
     
     initUnset: function(key, value) {
