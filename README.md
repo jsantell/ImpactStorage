@@ -2,7 +2,14 @@
 
 ImpactStorage is a plugin for HTML5/js game framework [ImpactJS](http://www.impactjs.com), giving developers an easy-to-use interface to localStorage for their projects. Mostly a facade for localStorage, ImpactStorage is set up to bake with your ImpactJS project, take care of some error handling, some convenience methods, as well as support objects in addition to strings.
 
-Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.spacewhalestudios.com/duckit/) (full release coming soon); enjoy!
+Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.spacewhalestudios.com/duckit/) (oh god, I need to finish this); enjoy!
+
+# Change Log
+
+## 1.01
+* Cleaned up a lot of redundant syntax
+* Methods return ``null`` if the browser doesn't support localStorage -- ``isCapable()`` should still be used
+* Added a minified version
 
 # Installation
 
