@@ -1,7 +1,7 @@
 /**
  *  @impact-storage.js
  *  @version: 1.01
- *  @author: Jordan Santell  
+ *  @author: Jordan Santell
  *  @date: October 2011
  *  @copyright (c) 2011 Jordan Santell, under The MIT License (see LICENSE)
  *
@@ -10,10 +10,10 @@
  */
 
 ig.module(
-	'plugins.impact-storage'
+    'plugins.impact-storage'
 )
 .requires(
-	'impact.game'
+    'impact.game'
 )
 .defines(function(){
 
@@ -24,17 +24,17 @@ ig.Storage = ig.Class.extend({
     },
 
     init: function()    {
-        ig.Storage.instance = this;    
+        ig.Storage.instance = this;
     },
-    
+
     isCapable: function()   {
         return !(typeof(window.localStorage) === 'undefined');
     },
-    
+
     isSet: function(key)   {
         return !(this.get(key) === null);
     },
-    
+
     initUnset: function(key, value) {
         if (this.get(key) === null) this.set(key, value);
     },
@@ -49,7 +49,7 @@ ig.Storage = ig.Class.extend({
     },
 
     getInt: function(key)   {
-        return parseInt(this.get(key));
+        return ~~this.get(key);
     },
 
     getFloat: function(key) {
