@@ -27,7 +27,7 @@ Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.s
     )
 </pre>
 * Create a local storage object and check out the examples and methods below
-<pre> 
+<pre>
     storage: new ig.Storage(),
 </pre>
 
@@ -43,7 +43,7 @@ Created by [Jordan Santell](http://www.jsantell.com) for [Duck It!](http://www.s
 * ``getBool(key)``: Returns the value associated with ``key`` in localStorage as a ``bool``. Returns ``null`` if ``value`` is not ``0``, ``1``, ``false`` or ``true``.
 * ``key(n)``: Returns the value of the key stored at position ``n`` in localStorage.
 * ``set(key, value)``: Sets an item in localStorage with the ``key`` ``value`` pair. Overwrites the previous value of ``key`` if it existed previously. ``value`` is stored as either a ``string`` or an ``object``.
-* ``setHighest(key, value)``: Sets an item in localStorage with the ``key`` ``value`` pair *iff* the currently stored ``value`` is smaller.
+* ``setHighest(key, value)``: Sets an item in localStorage with the ``key`` ``value`` pair *iff* the currently stored ``value`` is smaller, then returns true. Otherwise returns false.
 * ``remove(key)``: Removes the item with the specified ``key``.
 * ``clear()``: Clears all localStorage data associated with this origin.
 
@@ -65,7 +65,7 @@ During the update loop that determines whether or not the current score should o
        Updates the value of 'highScore' if and only
        if player.score > this.storage.get('highScore')
     */
-    this.storage.setHighest('highScore',player.score); 
+    this.storage.setHighest('highScore',player.score);
 </pre>
 
 ## Storing JSON Objects
@@ -89,4 +89,3 @@ localStorage stores all data as strings, but the ImpactStorage ``.set(key, value
 </pre>
 
 # More Information
-
