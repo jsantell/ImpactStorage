@@ -75,7 +75,11 @@ ig.Storage = ig.Class.extend({
     },
 
     setHighest: function(key, value)    {
-        if(value > this.getFloat(key)) this.set(key, value);
+        if(value > this.getFloat(key)){
+          this.set(key, value);
+          return true;
+        }
+        return false;
     },
 
     remove: function(key)   {
